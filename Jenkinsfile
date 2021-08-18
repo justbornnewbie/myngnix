@@ -6,6 +6,8 @@ pipeline{
     stage("build-ngnix"){
       steps{
         sh '''
+        pwd
+        ls -ltr
         docker build -t myngnix1 -f myngnix.DockerFile .
         docker images | grep myngnix1
         '''
