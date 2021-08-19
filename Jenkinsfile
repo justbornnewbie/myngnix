@@ -8,7 +8,7 @@ pipeline{
         sh '''
         pwd
         ls -ltr
-        docker build -t myngnix1 -f myngnix.DockerFile .
+        docker build -t myngnix1 -f myngnix.Dockerfile .
         docker images | grep myngnix1
         '''
       }
