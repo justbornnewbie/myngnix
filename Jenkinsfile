@@ -1,6 +1,6 @@
 pipeline{
   agent{
-    label "worker1"
+    label "awsworker"
   }
   stages{
     stage("build-ngnix"){
